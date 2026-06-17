@@ -27,7 +27,3 @@ resource "aws_s3_bucket_versioning" "versioning" {
     status = "Enabled"
   }
 }
-
-resource "aws_s3_bucket" "test" {
-  bucket = "654654646546546"
-}
