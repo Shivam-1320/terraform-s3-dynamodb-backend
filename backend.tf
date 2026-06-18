@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket             = "terraform-state-623716"
-    key                = "dev/terraform.tfstate"
-    region             = "ap-south-1"
-    aws_dynamodb_table = "terraform-locks"
+    bucket       = "terraform-state-623716"
+    key          = "dev/terraform.tfstate"
+    region       = "ap-south-1"
+    use_lockfile = true
   }
 }
